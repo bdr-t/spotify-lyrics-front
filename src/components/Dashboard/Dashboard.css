@@ -1,0 +1,83 @@
+.containerD {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0 1em 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+
+.inputContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.formContainer form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContainer form input {
+  min-width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  background-color: lightgray;
+}
+
+.songs{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.text-center{
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+
+  
+}
+
+@media (max-width: 896px){
+  .text-center{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px){
+  .text-center{
+    font-size: 17px;
+  }
+}
+
+
+@media (max-width: 400px){
+  .text-center{
+    font-size: 12px;
+  }
+}
+
+
+

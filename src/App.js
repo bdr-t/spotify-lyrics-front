@@ -1,9 +1,12 @@
-import Login from './Login'
-import './App.css';
+import Dashboard from "./components/Dashboard/Dashboard";
+import "./App.css";
+
 
 function App() {
   return (
-    <Login/>
+    <div className="container">
+      <Dashboard />
+    </div>
   );
 }
 

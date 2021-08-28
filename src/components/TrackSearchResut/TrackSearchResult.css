@@ -1,0 +1,35 @@
+.songContainer{
+    display: flex;
+    width: 30%;
+    background-color: rgb(71, 66, 66);
+    margin: 0.5em 0;
+    border-radius: 8px;
+    padding: 0.5em;
+    cursor: pointer;
+    gap: 1em;
+    align-items: center;
+}
+
+@media (max-width: 900px){
+    .songContainer{
+        width: 40%;
+    }
+  }
+
+
+
+.title{
+    font-weight: 700;
+}
+
+
+.title p {
+    margin: 0;
+}
+
+.songContainer img{
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+
+}
