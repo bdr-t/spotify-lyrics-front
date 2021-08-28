@@ -13,9 +13,7 @@ const spotifyApi = new SpotifyWebApi({
 const Dashboard = () => {
   //State
   const [accessToken, setAccessToken] = useState();
-  const [refreshToken, setRefreshToken] = useState(
-    process.env.REACT_APP_REFRESH_TOKEN
-  );
+  const refreshToken = process.env.REACT_APP_REFRESH_TOKEN
   const [expiresIn, setExpiresIn] = useState();
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -55,7 +53,7 @@ const Dashboard = () => {
       .catch(function (error) {
         console.log(error);
       });
-  }, []);
+  }, [refreshToken]);
 
   useEffect(() => {
     if (!refreshToken || !expiresIn) return;
